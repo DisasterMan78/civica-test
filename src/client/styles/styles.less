@@ -1894,6 +1894,62 @@ a {
     }
 }
 
+.data-table__data {
+    li {
+        padding: 0;
+        list-style: none;
+    }
+}
+
+.data-table__head,
+.data-table__data-row {
+    display: flex;
+}
+
+
+.data-table__head {
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+.data-table__data {
+    margin: 0;
+    padding: 0;
+}
+
+.table-striped {
+    .data-table__data-row {
+        border-bottom: 1px solid #ddd;
+
+        &:nth-of-type(odd) {
+            background-color: #f9f9f9;
+        }
+    }
+}
+
+.data-table__column {
+    flex-basis: 50%;
+    text-align: left;
+    padding: 3px;
+}
+
+.data-table__button--sort {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.data-table__indicator--sort {
+    &:after {
+        content: '\25b2';
+    }
+    &.reverse {
+        &:after {
+            content: '\25bc';
+        }
+    }
+}
+
 @media (max-width: 320px) {
     .today-datas li {
         padding: 1em .5em;

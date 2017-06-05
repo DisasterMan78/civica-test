@@ -1,16 +1,48 @@
 module.exports = {
-  people: getPeople()
+  products: getProducts()
 };
 
-function getPeople() {
+function getProducts() {
   return [
-    { id: 1, firstName: 'John', lastName: 'Papa', age: 25, location: 'Florida' },
-    { id: 2, firstName: 'Ward', lastName: 'Bell', age: 31, location: 'California' },
-    { id: 3, firstName: 'Colleen', lastName: 'Jones', age: 21, location: 'New York' },
-    { id: 4, firstName: 'Madelyn', lastName: 'Green', age: 18, location: 'North Dakota' },
-    { id: 5, firstName: 'Ella', lastName: 'Jobs', age: 18, location: 'South Dakota' },
-    { id: 6, firstName: 'Landon', lastName: 'Gates', age: 11, location: 'South Carolina' },
-    { id: 7, firstName: 'Haley', lastName: 'Guthrie', age: 35, location: 'Wyoming' },
-    { id: 8, firstName: 'Aaron', lastName: 'Jinglehiemer', age: 22, location: 'Utah' }
+    {
+      id    : 1,
+      name  : 'Jam',
+      price : '3.99'
+    },
+    {
+      id    : 2,
+      name  : 'Walnuts',
+      price : '5.00'
+    },
+    {
+      id    : 3,
+      name  : 'Cabbage',
+      price : '0.79'
+    },
+    {
+      id    : 4,
+      name  : 'Marzipan',
+      price : '2.30'
+    },
+    {
+      id    : 5,
+      name  : 'Eggs',
+      price : '1.20'
+    },
+    {
+      id    : 6,
+      name  : 'Lardons',
+      price : '3.79'
+    },
+    {
+      id    : 7,
+      name  : 'Haricot Vert',
+      price : '1.99'
+    },
+    {
+      id    : 8,
+      name  : 'Apples',
+      price : '0.99'
+    }
   ];
 }

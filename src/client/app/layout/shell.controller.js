@@ -14,8 +14,8 @@
     $rootScope.showSplash = true;
     vm.navline = {
       title: config.appTitle,
-      text: 'Created by John Papa',
-      link: 'http://twitter.com/john_papa'
+      text: 'Based on hot towel by John Papa',
+      link: 'https://github.com/johnpapa/generator-hottowel'
     };
 
     activate();

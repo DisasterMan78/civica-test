@@ -14,7 +14,7 @@
 
   var config = {
     appErrorPrefix: '[civicaTest Error] ',
-    appTitle: 'civicaTest'
+    appTitle: 'Civica Product Listing Test'
   };
 
   core.value('config', config);

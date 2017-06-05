@@ -9,35 +9,33 @@
   /* @ngInject */
   function DashboardController($q, dataservice, logger) {
     var vm = this;
-    vm.news = {
-      title: 'civicaTest',
-      description: 'Hot Towel Angular is a SPA template for Angular developers.'
-    };
-    vm.messageCount = 0;
-    vm.people = [];
+
+    vm.products = [];
     vm.title = 'Dashboard';
+    vm.sort = {
+      type    : 'price',
+      reverse : true
+    };
+    vm.sortBy = function (propertyName) {
+      vm.sort.reverse = (vm.sort.type === propertyName) ? !vm.sort.reverse : false;
+      vm.sort.type = propertyName;
+    };
 
     activate();
 
     function activate() {
-      var promises = [getMessageCount(), getPeople()];
+      var promises = [getProducts()];
       return $q.all(promises).then(function() {
         logger.info('Activated Dashboard View');
       });
     }
 
-    function getMessageCount() {
-      return dataservice.getMessageCount().then(function(data) {
-        vm.messageCount = data;
-        return vm.messageCount;
-      });
-    }
-
-    function getPeople() {
-      return dataservice.getPeople().then(function(data) {
-        vm.people = data;
-        return vm.people;
+    function getProducts() {
+      return dataservice.getProducts().then(function(data) {
+        vm.products = data;
+        return vm.products;
       });
     }
   }
+
 })();
