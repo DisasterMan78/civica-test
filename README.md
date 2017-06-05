@@ -1,5 +1,16 @@
 # civicaTest
 
+## Instructions
+
+ - Install prerequisites as per instructions below
+ - Run `gulp serve-dev`
+
+View the following commit on GitHub to review the novel code written for the test:
+
+[Products data table commit](https://github.com/DisasterMan78/civica-test/commit/82f456c868f857c240e95e18887202f4bc877222)
+
+What follows is the original HotTowel README
+
 **Generated from HotTowel Angular**
 
 >*Opinionated Angular style guide for teams by [@john_papa](//twitter.com/john_papa)*
